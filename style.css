@@ -1,27 +1,44 @@
-#navbar-container{
+:root {
+	color-scheme: normal;
+}
+
+#navbar-container {
 	display: flex;
 	flex-direction: row;
 	border-bottom: grey 2px solid;
 }
 
-.navbar-item{
+.navbar-item {
 	display: block;
-	padding-left:10px;
-	padding-right:10px;
-	padding-top:10px;
-	padding-bottom:10px;
-	margin-bottom:10px;
+
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	margin-bottom: 10px;
+	margin-right: 5px;
+
 	cursor: pointer;
-	color:black;
+	color: black;
 	text-decoration: none;
 	border-radius: 2px;
+	color: light-dark(black, white);
 }
 
-.navbar-item:hover{
-	background-color: lightgrey;
+.navbar-item:hover {
+	background-color: light-dark(lightgrey, grey);
 }
 
-#app-container{
-	width:80%;
-	margin:auto;
+.selected-navbar-item {
+	text-decoration: underline;
+}
+
+#app-container {
+	width: 80%;
+	margin: auto;
+}
+
+body {
+	background-color: light-dark(white, black);
 }
