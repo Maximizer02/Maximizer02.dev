@@ -40,5 +40,5 @@
 }
 
 body {
-	background-color: light-dark(white, black);
+	background-color: light-dark(white, #2b2a33);
 }
